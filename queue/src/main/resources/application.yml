@@ -4,3 +4,6 @@ server:
 spring:
   activemq:
     broker-url: tcp://127.0.0.1:61616
+
+jms:
+  queue-name: test

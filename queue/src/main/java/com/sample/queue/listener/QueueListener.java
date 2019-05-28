@@ -11,7 +11,7 @@ public class QueueListener {
 
     private Logger LOGGER = LoggerFactory.getLogger(this.getClass());
 
-    @JmsListener(destination = "test")
+    @JmsListener(destination = "${jms.queue-name}")
     public void receiveMessage(Message message) {
         LOGGER.info("Received message {}", message);
     }
